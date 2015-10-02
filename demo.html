@@ -11,7 +11,7 @@
 			font-family: 'Lato', sans-serif;
 		}
 		body{
-			width: 100%; height: 100%; overflow: hidden;
+			width: 100%; height: 100%; overflow: hidden; font-size: 16px;
 		}
 		a{
 			color: #f94263; text-decoration: none; text-align: center;
@@ -30,7 +30,7 @@
 		}
 		.icon{
 			position: absolute;
-			background: #2f2a2e;
+			background: #f94263;
 			color: #fff;
 			padding: 10px;
 			left: -78px;
@@ -38,13 +38,16 @@
 			border-top-left-radius: 10px;
 			border-bottom-left-radius: 10px;
 		}
-		.qr{ width: 100px; height: 100px; overflow: hidden; margin: 0 auto;}
+		.icon:hover{
+			background: #6f3159;
+		}
+		.qr{ width: 110px; height: 110px; overflow: hidden; margin: 0 auto;}
 		.qr img{
 			width: 100%;
 		}
-		.content{ display: block; width: 100%; vertical-align: top; margin-top: 20px;}
+		.content{ display: block; width: 100%; vertical-align: top; margin-top: 7px;}
 		footer{ width: 235px; background: #2f2a2e; color: #fff; font-size: 0.875rem; padding: 3%; text-align: center; margin: 0px;
-			border-bottom-left-radius: 10px;
+			border-bottom-left-radius: 5px;
 		}
 		</style>
 	</head>
@@ -62,16 +65,16 @@
 				<a class="icon" onclick="viewSomething()">
 					deals >>
 				</a>
-				<h3>
-					Scan QR on WeChat
-				</h3>
+				<h4>
+					Scan QR code on WeChat
+				</h4>
 				<div class="qr">
 					<img src="qrcode.png">
 				</div>
 				<div class="content">
-				<h3>
+				<h4>
 					Wechat deals
-				</h3>
+				</h4>
 					<p>
 						Get amazing offers on flights and shopping, scan Qr code
 					</p>
