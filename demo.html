@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>wechat hack</title>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+		<style>
+		*{margin:0;padding:0;}.container{margin:0 auto;max-width: 800px;
+			font-family: 'Lato', sans-serif;
+		}
+		body{
+			width: 100%; height: 100%; overflow: hidden;
+		}
+		.container{ width: 100%; }
+		#popup{ width: 210px; padding: 20px; background: #fff; height: 220px; position: absolute; right: -250px; bottom: 0;
+			color: #333; box-shadow: 0 2px 25px rgba(0,0,0,.2)!important;
+		}
+		.element {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.icon{
+			position: absolute;
+			background: #333;
+			color: #fff;
+			padding: 10px;
+			left: -78px;
+			top:0;
+		}
+		.qr{ width: 100px; height: 100px; overflow: hidden; margin: 0 auto;}
+		.qr img{
+			width: 100%;
+		}
+		.content{ display: block; width: 100%; vertical-align: top; margin-top: 20px;}
+		footer{ background: #ccc; font-size: 0.875rem; padding: 5px; margin-top: 5px;}
+		</style>
+	</head>
+	<body>
+
+
+		<div class="container">
+			<br>
+			<h1 id="nanobar">livechat</h1>
+			<br>
+			<div id="popup" class="popup element">
+				<a class="icon" onclick="viewSomething()">
+					deals >>
+				</a>
+				<h3>
+					Scan QR on WeChat
+				</h3>
+				<div class="qr">
+					<img src="qrcode.png">
+				</div>
+				<div class="content">
+				<h3>
+					Wechat deals
+				</h3>
+					<p>
+						Get amazing offers on flights and shopping, scan Qr code
+					</p>
+				</div>
+				<footer>
+					powered by Ongair
+				</footer>
+			</div>
+		</div>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			var action = 1;
+				function viewSomething() {
+				if ( action == 1 ) {
+					$('#popup').animate({ right: 0 });
+					
+					action = 2;
+				} else {
+					$('#popup').animate({ right: -250 });
+					
+					action = 1;
+				}
+			  	return false;
+			}
+		</script>
+
+	</body>
+</html>
