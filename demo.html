@@ -6,15 +6,22 @@
 		<title>wechat hack</title>
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 		<style>
-		*{margin:0;padding:0;}.container{margin:0 auto;max-width: 800px;
+		*{margin:0;padding:0; -moz-box-sizing: content-box;
+  box-sizing: content-box;}.container{margin:0 auto;max-width: 800px;
 			font-family: 'Lato', sans-serif;
 		}
 		body{
 			width: 100%; height: 100%; overflow: hidden;
 		}
+		a{
+			color: #f94263; text-decoration: none; text-align: center;
+		}
 		.container{ width: 100%; }
-		#popup{ width: 210px; padding: 20px; background: #fff; height: 220px; position: absolute; right: -250px; bottom: 0;
+		#popup{ width: 250px; height: 242px; background: #fff; position: absolute; right: -250px; bottom: 0;
 			color: #333; box-shadow: 0 2px 25px rgba(0,0,0,.2)!important;
+		}
+		.popupcontent{
+			padding: 20px;
 		}
 		.element {
 			position: relative;
@@ -23,18 +30,22 @@
 		}
 		.icon{
 			position: absolute;
-			background: #333;
+			background: #2f2a2e;
 			color: #fff;
 			padding: 10px;
 			left: -78px;
 			top:0;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
 		}
 		.qr{ width: 100px; height: 100px; overflow: hidden; margin: 0 auto;}
 		.qr img{
 			width: 100%;
 		}
 		.content{ display: block; width: 100%; vertical-align: top; margin-top: 20px;}
-		footer{ background: #ccc; font-size: 0.875rem; padding: 5px; margin-top: 5px;}
+		footer{ width: 235px; background: #2f2a2e; color: #fff; font-size: 0.875rem; padding: 3%; text-align: center; margin: 0px;
+			border-bottom-left-radius: 10px;
+		}
 		</style>
 	</head>
 	<body>
@@ -42,9 +53,12 @@
 
 		<div class="container">
 			<br>
-			<h1 id="nanobar">livechat</h1>
+			<h1>livechat</h1>
 			<br>
 			<div id="popup" class="popup element">
+			<div class="popupcontent">
+				
+			
 				<a class="icon" onclick="viewSomething()">
 					deals >>
 				</a>
@@ -62,8 +76,10 @@
 						Get amazing offers on flights and shopping, scan Qr code
 					</p>
 				</div>
-				<footer>
-					powered by Ongair
+				
+			</div>
+			<footer>
+					<p>Powered by <a href="app.ongair.im" target="_blank">Ongair</a></p>
 				</footer>
 			</div>
 		</div>
